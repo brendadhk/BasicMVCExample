@@ -1,32 +1,19 @@
-﻿<!DOCTYPE html><!--HTML5 doctype-->
+<!DOCTYPE html><!--HTML5 doctype-->
 <html>
 <head>
-<title>Distance MVC example</title>
-
+<title>Members</title>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
 <link href="af.ui.css" rel="stylesheet" type="text/css" />
 <link href="icons.css" rel="stylesheet" type="text/css" />
-<link href="themes/distance.css" rel="stylesheet" type="text/css" />
-
+<link href="themes/todos.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" charset="utf-8" src="_appMobi/appmobi_local_bootstrap.js"></script> 
 <script type="text/javascript" charset="utf-8" src="http://localhost/_appMobi/xhr.js"></script> 
 <script type="text/javascript" charset="utf-8" src="appframework.ui.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="af.mvc.js"></script>
 <script type="text/javascript" charset="utf-8" src="app.js"></script>
-<script src="http://debug-software.intel.com/target/target-script-min.js#514b24ae-f738-48eb-0eb1-e643e2f5665d"></script>
-
-<style type="text/css">
-	#distance-list .distance-destroy {display:block;}
-	ul.completed li {text-decoration:line-through;}
-    .jqmScrollbar{background:black !important;}
-</style>
-
 <script type="text/javascript">
-
 var init = function(){
-
 };
 window.addEventListener("load",init,false);  
 
@@ -54,61 +41,19 @@ if(!((window.DocumentTouch&&document instanceof DocumentTouch)||'ontouchstart' i
     script.src="af.desktopBrowsers.js";
     var tag=$("head").append(script);
     if(!$.os.ie){
-    //  $.os.desktop=true;
-    //  $.feat.nativeTouchScroll=true;
-    }
+   }
 }
 </script>
 </head>
 
 <body>
-
-
 <div id="afui">
-    <div id="header">
-    <!-- header stuff -->
-    </div>
-
-
-
-
+    <div id="header"></div>
     <div id="content">
-
-        <div title='Distance' id="create-distance" class="panel" selected="true">
-        
-        
-            <!-- input for the new item -->
-            <input id="new-distanceName"  placeholder="Add distance name" style="margin: 5px;width: 99%;" /><br />
-             <!-- input for the new item -->
-            <input id="new-distanceUnit"  placeholder="Add distance unit" style="margin: 5px;width: 99%;" /><br />
-			<!-- Button to ADD a new object-->
-            <div style="overflow:hidden;">
-                <a href="/distance/add"  id="addButton" style="width: 50%;float: left;height: 50px;" >Add</a>
-            </div>
-            
-            <!-- Button to GET ALL a new object-->
-            <div style="overflow:hidden;">
-                <a href="/distance/getList"  id="getListButton" style="width: 50%;float: left;height: 50px;" >Get List</a>
-            </div>
-            <!-- Panel to GET ALL objects -->
-            <div id='listDistance'></div>
-            
-            
-            <!-- Button to GET AN ITEM a new object-->
-            <div style="overflow:hidden;">
-                <a href="/distance/getItem"  id="getItemButton" style="width: 50%;float: left;height: 50px;" >Get Item</a>
-            </div>
-           
-            <!-- Button to DELETE a new object-->
-            <div style="overflow:hidden;">
-                <a href="/distance/delete"  id="deleteButton" style="width: 50%;float: left;height: 50px;" >Delete</a>
-            </div>
-            
-
+        <div title='loginTitle' id="login_Panel" class="panel" selected="true">
+            <div id='login_Div'></div>
         </div>
     </div>
 </div>
-
-
 </body>
 </html>

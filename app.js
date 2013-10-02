@@ -1,7 +1,7 @@
 var app = new $.mvc.app();
 
-app.loadModels("distance");
-app.loadControllers("distance");
+app.loadModels("login");
+app.loadControllers("login");
 //Routing by hash change
 //app.listenHashChange();
 
@@ -25,5 +25,5 @@ $.mvc.addRoute("/foo",function(){
 
 //We wait until app.ready is available to fetch the data, then we wire up the existing data in the templates
 app.ready(function(){
-    $.mvc.route("/distance");//Load the default distance route
+    $.mvc.route("/login");//Load the default todo route
 });
