@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+<title>Your New Application</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="text/javascript" charset="utf-8" src="_appMobi/appmobi_local_bootstrap.js"></script> 
+<script type="text/javascript" charset="utf-8" src="http://localhost:58888/_appMobi/xhr.js"></script> 
+<script type="text/javascript" charset="utf-8" src="app.js"></script>
+<script type="text/javascript">
+
+var init = function(){
+
+};
+window.addEventListener("load",init,false);  
+
+/* This code prevents users from dragging the page */
+var preventDefaultScroll = function(event) {
+    event.preventDefault();
+    window.scroll(0,0);
+    return false;
+};
+document.addEventListener('touchmove', preventDefaultScroll, false);
+
+/* This code is used to run as soon as appMobi activates */
+var onDeviceReady=function(){
+    //Size the display to 768px by 1024px
+    AppMobi.display.useViewport(768,1024);
+	
+	//hide splash screen
+	AppMobi.device.hideSplashScreen();	
+};
+
+
+function alertSave()
+{
+	///todo/save
+	alert(document.location.host);
+}
+</script>
+
+</head>
+<body>
+
+<script>
+document.write(location.host);
+</script>
+<a href="javascript:alertSave();"  id="testButton" style="width: 50%;float: left;height: 50px;" >test</a>
+
+</body>
+</html>

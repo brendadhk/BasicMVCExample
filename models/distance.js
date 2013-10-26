@@ -3,46 +3,20 @@
  */
 
 var myRemoteAdapter={
-    server:"http://localhost/dkServices/",
-    save:function(obj,callback,foo){
-        $.get(this.server+"distance_sql.php?axt=save&data="+encodeURIComponent(JSON.stringify(obj)),
-            function(id){
-                obj.distanceId=id;
-                $(document).trigger(obj.name + ":save", obj);
-                if(callback)
-                    callback(obj);
-            }
-        );
-    },
-    fetch:function(id,callback){
-        $.get(this.server+"distance_sql.php?axt=get&data="+encodeURIComponent(id),
-            function(obj){
-                
-                obj=JSON.parse(obj);
-                if(callback)
-                    callback(obj);
-            }
-        );
-    },
+	//URL
+	serviceUrl:'http://localhost/dkServices/Calls/distance_sql.php?axt=getall',
+	//serviceUrl:'distance.json',
+	//serviceUrl:'distance.json',
+	//Get all
     fetchAll:function(id,callback){
-        $.get(this.server+"distance_sql.php?axt=getAll",
+	 $.get(this.serviceUrl,
             function(obj){
                 obj=JSON.parse(obj);
                 if(callback)
                     callback(obj);
             }
         );
-    },
-    remove:function(obj,callback){
-        $.get(this.server+"distance_sql.php?axt=delete&data="+encodeURIComponent(obj.distanceId),
-            function(obj){
-                $(document).trigger(obj.name + ":remove", obj.distanceId);
-                obj=JSON.parse(obj);
-                if(callback)
-                    callback(obj);
-            }
-        );
-    }
+	} 
 }
 
 /**

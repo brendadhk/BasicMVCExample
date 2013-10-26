@@ -1,0 +1,67 @@
+{[
+			  {
+				"firstName":"Sally",
+				"lastName":"Broml",
+				"weight":"60",
+				"height":"175",
+				"type":"paddler - right",
+				"phone":"123456789",
+				"email":"sally@mail.com"
+			  },
+			  {
+				"firstName":"John",
+				"lastName":"Smith",
+				"weight":"80",
+				"height":"184",
+				"type":"sweep",
+				"phone":"12229955",
+				"email":"john@mail.com"
+			  },
+			  {
+				"firstName":"Mark",
+				"lastName":"More",
+				"weight":"80",
+				"height":"184",
+				"type":"president",
+				"phone":"12229955",
+				"email":"mark@mail.com"
+			  },
+			  {
+				"firstName":"Jenny",
+				"lastName":"Smith",
+				"weight":"80",
+				"height":"184",
+				"type":"paddler - left",
+				"phone":"12229955",
+				"email":"jennymail.com"
+			  },
+			  {
+				"firstName":"Angel",
+				"lastName":"Dance",
+				"weight":"80",
+				"height":"184",
+				"type":"drummer",
+				"phone":"12229955",
+				"email":"angel@mail.com"
+			  },
+			  {
+				"firstName":"Paul",
+				"lastName":"Round",
+				"weight":"80",
+				"height":"184",
+				"type":"sweep",
+				"phone":"12229955",
+				"email":"paul@mail.com"
+			  },
+			  {
+				"firstName":"John",
+				"lastName":"Smith",
+				"weight":"80",
+				"height":"184",
+				"type":"coach",
+				"phone":"12229955",
+				"email":"john@mail.com"
+			  }
+			  
+		  ]
+}

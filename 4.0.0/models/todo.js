@@ -45,19 +45,8 @@ var myRemoteAdapter={
     }
 }
 
-/*
-* RETURN JSON format
-* {"isComplete":"0","isArchived":"1","text":"test","id":"2"}
-* REQUEST JSON format
-* http://localhost/dkServices/distance_sql.php?axt=save&data={"distanceUnit":"mts","distanceName":"888"}
-*/
 
-/*
-*-------------------------------------------------------------------------------------------
-*                                           MODEL
-*-------------------------------------------------------------------------------------------
-*/
-Login =  $.mvc.model.extend("login",{
+Todo =  $.mvc.model.extend("todo",{
     validate:function(opts){
         if(opts&&opts.trigger)
             return "error validating";
@@ -70,7 +59,7 @@ Login =  $.mvc.model.extend("login",{
         debugger;
         this.isArchived=true;
         this.isComplete=false;
-        this.save();//Method in the Controller-Todo
+        this.save();
         return this;
     },
     finishItem:function(){
@@ -87,4 +76,4 @@ Login =  $.mvc.model.extend("login",{
     }
 });
 
-var login = new Login();
+var todo = new Todo();

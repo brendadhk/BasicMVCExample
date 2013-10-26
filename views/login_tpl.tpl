@@ -1,9 +1,13 @@
-<label for="">Email</label>
-<input type="text">
-<label for="">Password</label>
-<input type="text">
-<!-- link to home screen -->
-<a class="button" href="#uiHome">Login</a>
-<br/>
-<br/>
-<a href="#uiHome">Recover Password</a>
+<div style="margin-top:25px; text-align:center; font-size:20px;">
+   Distance List (&nbsp;<span class='count'>{{=it.items.length}}</span>&nbsp;) - swipe to archive
+</div>
+<ul id="distance-list" class="{{=it.listCSS}}">
+    {{ for(var i=0;i<it.items.length;i++){
+    }}
+     <li>
+        <label for="{{=it.items[i].distanceId}}"></label>
+        <div class="distance-text" >{{=it.items[i].distanceName}}</div>
+        <div class="distance-text" >{{=it.items[i].distanceUnit}}</div>
+    </li>
+    {{}}}
+</ul>
