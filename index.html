@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <!--HTML5 doctype-->
 <html>
@@ -10,13 +10,13 @@
 		
 		<link href="css/icons.css" rel="stylesheet" type="text/css"></link>
         <link href="css/af.ui.css" rel="stylesheet" type="text/css"></link>
-		
+	
         <script type="text/javascript" charset="utf-8" src="_appMobi/appmobi_local_bootstrap.js"></script> 
 		<script type="text/javascript" charset="utf-8" src="http://localhost/_appMobi/xhr.js"></script> 
 		<script type="text/javascript" charset="utf-8" src="js/appframework.ui.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/af.mvc.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
-
+        
         <script type="text/javascript" language="javascript">
             // This event handler is fired once the AppMobi libraries are ready
             function onDeviceReady() {
@@ -45,22 +45,19 @@
         
     </head>
     <body>
-        <div id="afui" class='android'>
-          
+        <div id="afui">
 			<div id="header"></div>
-          
-			<div id="content" style="">
-				
-				<!---- Login page ---->
-				<div class="panel" title="Login" id="login_Panel" selected="selected" style="">
-					<a class="button" href="/dragonking/login">Login</a>
-					<div id="login_content">
-					</div>
+			<div id="content">
+				<!---- Distance page ---->
+				<div class="panel" title="Distance" id="distance_panel" selected="selected" style="">
+					<div id="distance_save"></div>
+                    <br />
+                    <div id="distance_getAll"></div>
+                    <br />
+                    <div id="distance_showItem"></div>
 				</div>
-				<!---- End page ---->
-				
+				<!---- End Distance page ---->
 			</div>
-
         </div>
     </body>
 </html>
